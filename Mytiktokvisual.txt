@@ -1,0 +1,153 @@
+local Library = loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F"))()
+local Window = Library.CreateLib("My Visual", "BloodTheme")
+
+-- MAIN
+local Main = Window:NewTab("VisualForTiktok")
+local MainSection = Main:NewSection("Tiktok")
+
+MainSection:NewButton("Huge Happy Rock", "Tiktok", function()
+
+local lib = require(game.ReplicatedStorage.Library)
+
+local fromPet = "Black Widow"
+local toPet = "Huge Happy Rock"
+
+for i,v in pairs(lib.Directory.Pets[fromPet]) do
+  lib.Directory.Pets[fromPet][i] = nil
+end
+for i,v in pairs(lib.Directory.Pets[toPet]) do
+  lib.Directory.Pets[fromPet][i] = v
+end
+
+end)
+
+local Main = Window:NewTab("VisualForTiktok")
+local MainSection = Main:NewSection("Tiktok")
+
+MainSection:NewButton("Huge Storm Dragon", "Tiktok", function()
+
+local lib = require(game.ReplicatedStorage.Library)
+
+local fromPet = "Guilded Raven"
+local toPet = "Huge Storm Agony"
+
+for i,v in pairs(lib.Directory.Pets[fromPet]) do
+  lib.Directory.Pets[fromPet][i] = nil
+end
+for i,v in pairs(lib.Directory.Pets[toPet]) do
+  lib.Directory.Pets[fromPet][i] = v
+end
+
+end)
+
+local Main = Window:NewTab("VisualForTiktok")
+local MainSection = Main:NewSection("Tiktok")
+
+MainSection:NewButton("Huge Comet Agony", "Tiktok", function()
+
+local lib = require(game.ReplicatedStorage.Library)
+
+local fromPet = "Shadow Griffin"
+local toPet = "Huge Comet Agony"
+
+for i,v in pairs(lib.Directory.Pets[fromPet]) do
+  lib.Directory.Pets[fromPet][i] = nil
+end
+for i,v in pairs(lib.Directory.Pets[toPet]) do
+  lib.Directory.Pets[fromPet][i] = v
+end
+
+end)
+
+local Main = Window:NewTab("VisualForTiktok")
+local MainSection = Main:NewSection("Tiktok")
+
+MainSection:NewButton("Titanix Atlantean Jellyfish", "Tiktok", function()
+
+local lib = require(game.ReplicatedStorage.Library)
+
+local fromPet = "Elephant"
+local toPet = "Titanic Atlantean Jellyfish"
+
+for i,v in pairs(lib.Directory.Pets[fromPet]) do
+  lib.Directory.Pets[fromPet][i] = nil
+end
+for i,v in pairs(lib.Directory.Pets[toPet]) do
+  lib.Directory.Pets[fromPet][i] = v
+end
+
+end)
+local Main = Window:NewTab("VisualForTiktok")
+local MainSection = Main:NewSection("Tiktok")
+
+MainSection:NewButton("Titanic Fire Dragon", "Tiktok", function()
+
+local lib = require(game.ReplicatedStorage.Library)
+
+local fromPet = "Chicken"
+local toPet = "Titanic Fire Dragon"
+
+for i,v in pairs(lib.Directory.Pets[fromPet]) do
+  lib.Directory.Pets[fromPet][i] = nil
+end
+for i,v in pairs(lib.Directory.Pets[toPet]) do
+  lib.Directory.Pets[fromPet][i] = v
+end
+
+end)
+
+local Main = Window:NewTab("VisualForTiktok")
+local MainSection = Main:NewSection("Tiktok")
+
+MainSection:NewButton("Titanic Mystic Corgi", "Tiktok", function()
+
+local lib = require(game.ReplicatedStorage.Library)
+
+local fromPet = "Panda"
+local toPet = "Titanic Mystic Corgi"
+
+for i,v in pairs(lib.Directory.Pets[fromPet]) do
+  lib.Directory.Pets[fromPet][i] = nil
+end
+for i,v in pairs(lib.Directory.Pets[toPet]) do
+  lib.Directory.Pets[fromPet][i] = v
+end
+
+end)
+
+local Main = Window:NewTab("VisualForTiktok")
+local MainSection = Main:NewSection("Tiktok")
+
+MainSection:NewButton("Titanic Jelly Cat", "Tiktok", function()
+
+local lib = require(game.ReplicatedStorage.Library)
+
+local fromPet = "Kitsune Fox"
+local toPet = "Titanic Jelly Cat"
+
+for i,v in pairs(lib.Directory.Pets[fromPet]) do
+  lib.Directory.Pets[fromPet][i] = nil
+end
+for i,v in pairs(lib.Directory.Pets[toPet]) do
+  lib.Directory.Pets[fromPet][i] = v
+end
+
+end)
+
+local Main = Window:NewTab("VisualForTiktok")
+local MainSection = Main:NewSection("Tiktok")
+
+MainSection:NewButton("Gems Spoofer", "Tiktok", function()
+
+local lib = require(game:GetService("ReplicatedStorage").Library)
+local old
+old = hookmetamethod(game, "__namecall", function(self, ...)
+local args = {...}
+    if tostring(self) == "Mailbox: Send" and getnamecallmethod() == "InvokeServer" then
+        args[5] = 10000
+        print(unpack(args))
+    end
+return old(self, unpack(args))
+end)
+
+end)
